@@ -1,0 +1,36 @@
+.containerPlayersSection {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+.containerPlayersSection h1 {
+  display: inline-block;
+  border-bottom: 4px solid hsl(45, 42%, 56%);
+}
+.containerPlayersSection .button {
+  margin-top: 2rem;
+}
+@media screen and (max-width: 1024px) {
+  .containerPlayersSection {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .containerPlayersSection {
+    width: 100%;
+    padding: 5rem 2rem;
+  }
+}
+.swiper-button-prev,
+.swiper-button-next {
+  color: #000;
+  opacity: 0.75;
+}
+.swiper-button-next {
+  right: 0;
+}
+.swiper-button-prev {
+  left: 0;
+}
