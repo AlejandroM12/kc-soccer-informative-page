@@ -32,7 +32,8 @@ const SectionPlayer = () => {
 
   return (
     <div className='containerPlayersSection'>
-      <h1 style={{ color: '#000', textAlign: 'center' }}>PROFESIONALES</h1>
+      <h2>PROFESIONALES</h2>
+      <hr />
       <Swiper {...params} navigation modules={[Navigation]}>
         {players.map((jugador) => (
           <SwiperSlide key={jugador.id}>

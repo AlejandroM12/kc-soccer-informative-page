@@ -5,10 +5,7 @@
   padding-bottom: 5rem;
   text-align: center;
 }
-.containerPlayersSection h1 {
-  display: inline-block;
-  border-bottom: 4px solid hsl(45, 42%, 56%);
-}
+
 .containerPlayersSection .button {
   margin-top: 2rem;
 }

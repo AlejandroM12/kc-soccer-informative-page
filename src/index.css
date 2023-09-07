@@ -39,6 +39,25 @@ h2 {
   color: #0a0707;
   font-family: Oswald;
   font-weight: 900;
+  position: relative;
+  display: inline-block;
+  border-bottom: 4px solid hsl(45, 42%, 56%);
+  margin-bottom: 20px;
+}
+hr {
+  background: #efefef;
+  height: 2px;
+  width: 100%;
+  display: block;
+  margin-top: 2.5;
+  margin-bottom: 2.5rem;
+}
+p {
+  font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #000000;
+  line-height: 1.5;
+  text-align: center;
 }
 .button {
   text-decoration: none;

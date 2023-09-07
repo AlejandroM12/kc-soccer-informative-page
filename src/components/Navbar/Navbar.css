@@ -29,15 +29,7 @@
 .instagram:hover {
   color: #fff;
 }
-.addBackground .menu li {
-  font-size: 0.875rem;
-  font-weight: 500;
-  padding: 1rem 0;
-  text-align: center;
-  color: #0c0c0c;
-  cursor: pointer;
-  text-transform: uppercase;
-}
+
 .Navbar.addBackground {
   padding: 0.2rem 10rem;
 }
@@ -73,6 +65,7 @@
     color: rgba(255, 255, 255, 0.8);
     cursor: pointer;
     text-transform: uppercase;
+    border-bottom: 1px solid transparent;
   }
   .menu li:hover {
     border-bottom: 1px solid rgba(255, 255, 255, 0.8);
@@ -92,12 +85,12 @@
     right: 50%;
     left: 50%;
     transform: translate(-50%);
-    background: #79a276;
+    background: hsl(45, 42%, 56%);
     padding: 10px;
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    box-shadow: 0 2px 4px hsl(219, 63%, 95%);
+    box-shadow: 0 2px 25px 5px hsl(210, 2%, 10%);
   }
   .showMenu {
     top: 8rem;
@@ -106,13 +99,26 @@
     width: 150px;
     height: auto;
   }
+  .addBackground .menu li {
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 1rem 0;
+    text-align: center;
+    color: hsl(219, 63%, 95%);
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  .Navbar.addBackground {
+    padding: 0.5rem 2rem;
+  }
+  .addBackground .instagram,
+  .addBackground .menuIcon {
+    color: #0c0c0c;
+  }
 }
 .addBackground {
   background: #fff;
   transition: background 0.5s ease-in-out;
-}
-.addBackground .icon {
-  color: #0c0c0c;
 }
 
 @media screen and (min-width: 768px) {
@@ -136,6 +142,9 @@
   }
   .menu ul li:hover {
     border-bottom: 1.5px solid rgba(255, 255, 255, 0.8);
+  }
+  .addBackground .icon {
+    color: #0c0c0c;
   }
 }
 @media screen and (min-width: 960px) {
