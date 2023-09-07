@@ -8,9 +8,9 @@ const Hero = () => {
           <h1>KC Soccer FIFA AGENT</h1>
           <p>
             Somos una empresa de representación de deportistas, con mas de 20
-            años de experiencia. Avalados con Licencia FIFA, para asesorar
-            futbolistas.
+            años de experiencia.
           </p>
+          <p>Avalados con Licencia FIFA, para asesorar futbolistas.</p>
         </div>
       </div>
     </div>

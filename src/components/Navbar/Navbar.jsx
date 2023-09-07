@@ -6,6 +6,7 @@ import './Navbar.css';
 
 const Navbar = () => {
   const [menu, setMenu] = useState('menu');
+  const [transparent, setTransparent] = useState('Navbar');
 
   const showNavbar = () => {
     setMenu('showMenu menu');
@@ -13,8 +14,16 @@ const Navbar = () => {
   const removeNavbar = () => {
     setMenu('menu');
   };
+  const addBg = () => {
+    if (window.scrollY >= 10) {
+      setTransparent('Navbar addBackground');
+    } else {
+      setTransparent('Navbar');
+    }
+  };
+  window.addEventListener('scroll', addBg);
   return (
-    <div className='Navbar'>
+    <div className={transparent}>
       <div className='logoDiv'>
         <img src={logo} alt='logo' />
       </div>

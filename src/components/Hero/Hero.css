@@ -1,36 +1,50 @@
 .Hero {
-  height: auto;
+  height: 100vh;
   width: 100vw;
-  padding-top: 7rem;
-  padding-bottom: 3rem;
   background: url(../../assets/bg-hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
   color: rgb(255, 255, 255);
-}
-.secContainer {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  justify-content: center;
+}
+
+.secContainer {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
+
 .textDiv {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
 }
+
+.textDiv h1 {
+  text-transform: uppercase;
+}
+
 .textDiv p {
-  font-size: 0.938rem;
+  font-size: 1.3rem;
   line-height: 1.5;
-  opacity: 0.7;
-  padding: 1rem 0 2rem;
+  opacity: 0.8;
+  padding: 0;
+  margin: 0;
 }
+
 @media screen and (min-width: 840px) {
   .secContainer {
     width: 75%;
     margin: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .textDiv p {
+    font-size: 0.938rem;
   }
 }
