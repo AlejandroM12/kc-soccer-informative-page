@@ -1,0 +1,88 @@
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  position: fixed;
+  background: transparent;
+  z-index: 1000;
+}
+.logoDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+}
+.logoDiv img {
+  width: 250px;
+  height: 77px;
+  display: block;
+  max-width: 100%;
+}
+.instagram {
+  font-size: 1.6rem;
+  color: #0c0c0c;
+}
+@media screen and (max-width: 992px) {
+  .logoDiv img {
+    width: 200px;
+    height: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  .menu {
+    position: absolute;
+    width: 70%;
+    top: -100rem;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #0c0c0c;
+    padding: 2rem;
+    border-radius: 10px;
+    transition: 0.8s ease-in-out;
+    box-shadow: 0 2px 25px 5px hsl(219, 63%, 95%);
+  }
+
+  .menu li {
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 1rem 0;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  .menu li:hover {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  }
+  .menuIcon,
+  .closeIcon {
+    font-size: 1.6rem;
+  }
+  .menuIcon:hover,
+  .closeIcon:hover {
+    color: #0c0c0c;
+  }
+  .closeIcon {
+    position: absolute;
+    bottom: -25px;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    background: #79a276;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px hsl(219, 63%, 95%);
+  }
+  .showMenu {
+    top: 8rem;
+  }
+  .logoDiv img {
+    width: 150px;
+    height: auto;
+  }
+}
