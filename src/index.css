@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,900&family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.42857143;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito Sans', sans-serif, Helvetica, Arial;
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+h1 {
+  font-size: 2.063rem;
+  font-weight: 700;
+  line-height: 2.438rem;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0px;
+  font-family: Oswald;
+}
+h2 {
+  font-size: 2.063rem;
+  line-height: 2.5rem;
+  color: #0a0707;
+  font-family: Oswald;
+  font-weight: 900;
+}
+a {
+  text-decoration: none;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  background-color: #79a276;
+  color: #fff;
+  height: 41px;
+  font-weight: 900;
+  line-height: 1rem;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  border-radius: 0;
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  border: 0px;
+}
+li {
+  list-style: none;
+}
