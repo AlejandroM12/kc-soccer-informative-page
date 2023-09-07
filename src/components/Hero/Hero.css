@@ -1,0 +1,36 @@
+.Hero {
+  height: auto;
+  width: 100vw;
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+  background: url(../../assets/bg-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  color: rgb(255, 255, 255);
+}
+.secContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.textDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.textDiv p {
+  font-size: 0.938rem;
+  line-height: 1.5;
+  opacity: 0.7;
+  padding: 1rem 0 2rem;
+}
+@media screen and (min-width: 840px) {
+  .secContainer {
+    width: 75%;
+    margin: auto;
+  }
+}
