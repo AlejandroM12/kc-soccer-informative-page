@@ -33,6 +33,9 @@
 .Navbar.addBackground {
   padding: 0.2rem 10rem;
 }
+.addBackground .menu li {
+  color: #0c0c0c;
+}
 .addBackground .menu li:hover {
   border-bottom: 1px solid rgba(29, 28, 28, 0.8);
 }
