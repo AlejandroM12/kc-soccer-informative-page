@@ -1,5 +1,5 @@
 import { Hero, Navbar } from './components';
-import { SectionPlayer, Team } from './views';
+import { SectionPlayer, Social, Team } from './views';
 
 function App() {
   return (
@@ -8,6 +8,7 @@ function App() {
       <Hero />
       <SectionPlayer />
       <Team />
+      <Social />
     </>
   );
 }
