@@ -59,6 +59,9 @@ p {
   line-height: 1.5;
   text-align: center;
 }
+a {
+  text-decoration: none;
+}
 .button {
   text-decoration: none;
   font-size: 0.875rem;
