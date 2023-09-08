@@ -1,11 +1,17 @@
+import { useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import { Player } from '../../components';
 import players from '../../helpers/data';
 import 'swiper/swiper-bundle.css';
 import './SectionPlayer.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const SectionPlayer = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000, once: true });
+  }, []);
   const params = {
     pagination: {
       clickable: true,
@@ -31,7 +37,7 @@ const SectionPlayer = () => {
   };
 
   return (
-    <div className='containerPlayersSection'>
+    <div data-aos='fade-down' className='containerPlayersSection'>
       <h2>PROFESIONALES</h2>
       <hr />
       <Swiper {...params} navigation modules={[Navigation]}>

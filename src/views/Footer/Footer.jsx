@@ -1,12 +1,18 @@
+import { useEffect } from 'react';
 import { AiFillInstagram, AiFillMessage } from 'react-icons/ai';
 import logo from '@assets/logo-n-bg.png';
 import './Footer.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Footer = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000, once: true });
+  }, []);
   return (
     <div className='Footer'>
       <div className='secContainer'>
-        <div className='logoDiv'>
+        <div data-aos='fade-up' className='logoDiv'>
           <div className='footerLogo'>
             <img src={logo} alt='logo' />
           </div>
@@ -19,7 +25,7 @@ const Footer = () => {
             <AiFillMessage className='icon' />
           </div>
         </div>
-        <div className='footerLinks'>
+        <div data-aos='fade-up' className='footerLinks'>
           <span className='linkTitle'> Informacion</span>
           <li>
             <a href='#'>Inicio</a>
@@ -34,7 +40,7 @@ const Footer = () => {
             <a href='#'>Contacto</a>
           </li>
         </div>
-        <div className='footerLinks'>
+        <div data-aos='fade-up' className='footerLinks'>
           <span className='linkTitle'>Enlaces Útiles</span>
           <li>
             <a href='#'>Ayuda</a>
@@ -49,7 +55,7 @@ const Footer = () => {
             <a href='#'>Aviso Legal</a>
           </li>
         </div>
-        <div className='footerLinks'>
+        <div data-aos='fade-up' className='footerLinks'>
           <span className='linkTitle'>Contact Details</span>
           <span className='phone'>+123 123 123 123</span>
           <span className='email'>example@gmail.com</span>
